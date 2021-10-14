@@ -1,6 +1,6 @@
 using System;
 
-class Funcionario{
+class abstract Funcionario : Usuario{
 //Atributos
 protected string cargo;
 

@@ -1,6 +1,6 @@
 using System;
 
-class Administrador{
+class Administrador : Usuario{
 //Atributos
 protected string cadastrarFunc;
 

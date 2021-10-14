@@ -1,7 +1,7 @@
 using System;
 
 
-class Usuario{
+abstract class Usuario : IAutenticar{
 
 //Atributos
 protected int id;

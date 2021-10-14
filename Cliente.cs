@@ -1,6 +1,6 @@
 using System;
 
-class Cliente{
+class Cliente : Usuario{
 //Atributos
 protected string dtCadastro;
 
