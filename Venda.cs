@@ -2,16 +2,23 @@ using System;
 
 class Venda{
 //Atributos
-protected string formaPagamento;
+public string formaPagamento;
 
 //Metodos
-protected void credito{
-
+public void credito{
+  if formaPagamento == credito{
+    valorCompra = 1.1;
+    return valorCompra;
+  }
 }
-protected void debito{
-
+public void debito{
+  if formaPagamento == debito{
+    valorCompra = 0.9;
+    return valorCompra;
+  }
 }
-protected void finalizarCompra{
-  
+public void finalizarCompra(){
+  Console.WriteLine ("Sua Compra deu um Total de: {0}, Você gostaria de finalizar sua compra?", valorCompra);
+  Console.readline();
 }
 }

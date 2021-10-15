@@ -1,4 +1,5 @@
 using System;
+using System.Collection.Generic;
 
 class Administrador : Usuario{
 //Atributos

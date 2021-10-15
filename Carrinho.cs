@@ -1,8 +1,9 @@
 using System;
+using System.Collection.Generic;
 
 class Carrinho{
 //Atributos
-
+protected List<double> listaCarrinho = new list<double>();
 
 //Metodos
 protected void excluirProdCarrinho{
@@ -11,7 +12,7 @@ protected void excluirProdCarrinho{
 protected void comprarProduto{
 
 }
-protected void valorCompra{
+public void valorCompra{
 
 }
 protected void fecharCompra{
