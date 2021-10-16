@@ -6,40 +6,44 @@ class Administrador : Usuario{
   //protected string cadastrarProd;
   protected int qtdProduto = 100;
   protected List<string> listaProdutos = new List<string>();
+  protected int mandante = 500;
 
   //Metodos
-  public void cadastrarFunc(){
 
-  }
-
-  public void adicionarProduto(){
-    for(int i = 1; i<=qtdProduto; i++){
-      Console.WriteLine("teste");
-    }
-
+  public void addProduto(List<string> prod){
+    //for(int i = 1; i<=qtdProduto; i++){
+    //  Console.WriteLine("teste");
+    //}
+    listaProdutos = prod;
   }
   public void excluirProduto(){
 
   }
-  public void aprovarPedido(){
-
+  public void consultarProdutos(){
+    
   }
-  public void alterarStatusCompra(){
-
+  public void consultarPedidos(){
+    
   }
-  public void alterarEstoque(){
-
-  }
-  public void consultarCompras(){
+  public void consultarEstoque(){
     
   }
 
-  public override void Privilegios(){
-      Console.WriteLine("");
+
+  public Administrador(string s, string l, string m, int c_p_f, int i,string n, int tel, bool st, string tp, int mand):base(s,l,m,c_p_f,i,n,tel,st,tp){
+    mand = mandante;
   }
 
-  public Administrador(string s, string l, string m, int c_p_f, int i, string n, int tel, bool st, string tp):base(s,l,m,c_p_f,i,n,tel,st,tp){
-    
+  // Login admin
+  public override bool validarUsuario(string m, string s, int mand){
+    if (matricula == "admin" && Senha == "@admin" && mand == 500);
+      return true;
+  }
+
+  //Privilégios
+  public override string Privilegios(){
+    string privA = "Cadastro de funcionários; inclusão/exclusão/modificação/consulta de estoque, produtos e pedidos";
+    return privA;
   }
 
   

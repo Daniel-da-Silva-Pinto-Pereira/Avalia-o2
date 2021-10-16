@@ -43,20 +43,24 @@ public abstract class Usuario : IAutenticar{
 
   //Metodos:
 
+  //Sobrecarga e Sobrescrita:
   //Login de um cliente normal
-  public void validarUsuario(int c, string s){
+  public virtual bool validarUsuario(int c, string s){
+    return false;
   }
-
   // Login funcionário
-  public void validarUsuario(string m, string s){
+  public virtual bool validarUsuario(string m, string s){
+    return false;
   }
-
   // Login admin
-  public void validarUsuario(string m, string s, int mandante){
+  public virtual bool validarUsuario(string m, string s, int mand){
+    return false;
   }
 
-  public virtual void Privilegios(){
-    
+  // Sobrescrita:
+  public virtual string Privilegios(){
+    string priv = "Privilégio genérico";
+    return priv;
   }
 
   //Construtor:
@@ -71,5 +75,7 @@ public abstract class Usuario : IAutenticar{
     status = st;
     tipo = tp;
   }
+
+
 
 }
