@@ -8,7 +8,7 @@ public class Pedido : Carrinho{
 
   //Metodos
 
-  public Pedido(List<double> l, double t):base(l,t){}
+  public Pedido(List<string> l, double t, bool f):base(l,t,f){}
 
   public void listarCompra(){
     

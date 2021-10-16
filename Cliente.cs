@@ -13,13 +13,7 @@ class Cliente : Usuario{
       set{
         Login = value;
       }
-    }
-    
-  public void adicionarProdutoCarrinho(){
-    
-  }
-
-
+    } 
 
   public Cliente(string s, string l, string m, int c_p_f, int i, string n, int tel, bool st, string tp):base(s,l,m,c_p_f,i,n,tel,st,tp){
     
@@ -36,10 +30,6 @@ class Cliente : Usuario{
     string privC = "Consulta de produtos disponível para compra; comprar produtos";
     return privC;
   }
-
-  
-
-  
 
 
 }

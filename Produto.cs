@@ -11,7 +11,7 @@ class Produto{
 
   //Metodos
   public void listarProduto(){
-
+    //Administrador.consultarEstoque();
   }
   public void cadastrarProduto(){
     

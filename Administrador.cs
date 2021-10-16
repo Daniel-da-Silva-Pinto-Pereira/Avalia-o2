@@ -2,10 +2,10 @@ using System;
 using System.Collections.Generic;
 
 class Administrador : Usuario{
-  //Atributos
+  //Atributos 
   //protected string cadastrarProd;
   protected int qtdProduto = 100;
-  protected List<string> listaProdutos = new List<string>();
+  protected List<string> listaProdutos = new List<string>(); // colocar na classe Produtos
   protected int mandante = 500;
 
   //Metodos
@@ -25,8 +25,8 @@ class Administrador : Usuario{
   public void consultarPedidos(){
     
   }
-  public void consultarEstoque(){
-    
+  public List<string> consultarEstoque(){
+    return listaProdutos;
   }
 
 

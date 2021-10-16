@@ -3,34 +3,35 @@ using System.Collections.Generic;
 
 public class Carrinho{
   //Atributos
-  protected List<double> listaCarrinho = new List<double>();
+  protected List<string> listaCarrinho = new List<string>();
   protected double totalCompra;
-
-  public  double getTotalCompra(){
-    return totalCompra;
-  }
+  protected bool fechar;
 
    public  void setTotalCompra(double total){
     totalCompra = total;
   }
 
   //Metodos
-  public void excluirProdCarrinho(){
+  public void excluirProdCarrinho(string nome){
+    listaCarrinho.Remove(nome);
+  }
+  public void addProdCar(string prod){
+    listaCarrinho.Add(prod);
+    //listaProdutos = prod;
+  }
+  public double visualizarTotalCompra(){
+    return totalCompra;
 
   }
-  public void comprarProduto(){
-
-  }
-  public void visualizarTotalCompra(){
-
-  }
-  public void fecharCompra(){
-
+  public bool fecharCompra(bool f){
+    fechar = f; 
+    return fechar;
   }
 
-  public Carrinho(List<double> l, double t){
+  public Carrinho(List<string> l, double t, bool f){
     listaCarrinho = l;
     totalCompra = t;
+    fechar = f;
   }
   
 }
