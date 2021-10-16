@@ -1,11 +1,12 @@
 using System;
+using System.Collections.Generic;
 
 class Pedido{
 //Atributos
 protected double numeroPedido;
 
 //Metodos
-protected void listarCompra{
+public void listarCompra(){
   
 }
 }

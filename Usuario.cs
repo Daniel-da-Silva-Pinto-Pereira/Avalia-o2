@@ -1,27 +1,35 @@
 using System;
-using System.Collection.Generic;
+using System.Collections.Generic;
 
 abstract class Usuario : IAutenticar{
 
   //Atributos:
 
-  protected string login;
-  protected string senha;
-  public string Login{
-    get{
-      return login;
-    }
+  private string login;
+  private string senha;
+
+  public string Logins{
+    get{return login;}
     set{
-      login = string l;
+      login = value;
     }
   }
-
-  public string Senha{
-    get{
-      return senha;
-    }
+  public string Login{
+    get{return login;}
     set{
-      senha = string s;
+      login = value;
+    }
+  }
+  public string Senhas{
+    get{return senha;}
+    set{
+      senha = value;
+    }
+  }
+  public string Senha{
+    get{return senha;}
+    set{
+      senha = value;
     }
   }
 
@@ -47,13 +55,17 @@ abstract class Usuario : IAutenticar{
   public void validarUsuario(string m, string s, int mandante){
   }
 
+  public virtual void Privilegios(){
+    
+  }
+
   //Construtor:
-  public Usuario(string l, string s, string m, int c_p_f, int i, string n, int tel, bool st, string tp){
-    login = l;
+  public Usuario(string s, string l, string m, int c_p_f, int i, string n, int tel, bool st, string tp){
     senha = s;
+    login = l;
     matricula = m;
     cpf = c_p_f;
-    id = id;
+    id = i;
     nome = n;
     telefone = tel;
     status = st;

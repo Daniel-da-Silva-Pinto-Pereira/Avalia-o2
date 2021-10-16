@@ -1,27 +1,38 @@
 using System;
-using System.Collection.Generic;
+using System.Collections.Generic;
 
 class Administrador : Usuario{
-//Atributos
-protected string cadastrarFunc;
+  //Atributos
+  protected string cadastrarFunc;
+  protected List<string> listaProdutos = new List<string>();
 
-//Metodos
-protected void adicionarProduto{
+  //Metodos
+  protected void adicionarProduto(){
 
-}
-protected void excluirProduto{
+  }
+  public void excluirProduto(){
 
-}
-protected void aprovarPedido{
+  }
+  public void aprovarPedido(){
 
-}
-protected void alterarStatusCompra{
+  }
+  public void alterarStatusCompra(){
 
-}
-protected void alterarEstoque{
+  }
+  public void alterarEstoque(){
 
-}
-protected void consultarCompras{
+  }
+  public void consultarCompras(){
+    
+  }
+
+  public override void Privilegios(){
+      Console.WriteLine("");
+  }
+
+  public Administrador(string s, string l, string m, int c_p_f, int i, string n, int tel, bool st, string tp):base(s,l,m,c_p_f,i,n,tel,st,tp){
+    
+  }
+
   
-}
 }

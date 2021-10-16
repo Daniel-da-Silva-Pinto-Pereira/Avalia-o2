@@ -1,19 +1,20 @@
 using System;
+using System.Collections.Generic;
 
 class Produto{
-//Atributos
-protected string id;
-protected string descricao;
-protected string tipo;
-protected double valor;
-protected double quantidade;
+  //Atributos
+  protected string id;
+  protected string descricao;
+  protected string tipo;
+  protected double valor;
+  protected double quantidade;
 
-//Metodos
-protected void listarProduto{
+  //Metodos
+  public void listarProduto(){
 
-}
-protected void cadastrarProduto{
-  
-}
+  }
+  public void cadastrarProduto(){
+    
+  }
 
 }

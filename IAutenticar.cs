@@ -1,10 +1,11 @@
 using System;
+using System.Collections.Generic;
 
 interface IAutenticar {
 
   //Propriedades
-  string Login{get;set;}
-  string Senha{get;set;}
+  string Logins{get;set;}
+  string Senhas{get;set;}
 
   //Método
   public void Autenticar(string l, string s){

@@ -1,21 +1,31 @@
 using System;
-using System.Collection.Generic;
+using System.Collections.Generic;
 
 class Carrinho{
-//Atributos
-protected List<double> listaCarrinho = new list<double>();
+  //Atributos
+  protected List<double> listaCarrinho = new List<double>();
+  private double totalCompra;
 
-//Metodos
-protected void excluirProdCarrinho{
+  public double getTotalCompra(){
+    return totalCompra;
+  }
 
-}
-protected void comprarProduto{
+   public void setTotalCompra(double total){
+    totalCompra = total;
+  }
 
-}
-public void valorCompra{
+  //Metodos
+  public void excluirProdCarrinho(){
 
-}
-protected void fecharCompra{
+  }
+  public void comprarProduto(){
 
-}
+  }
+  public void visualizarTotalCompra(){
+
+  }
+  public void fecharCompra(){
+
+  }
+  
 }
