@@ -3,11 +3,18 @@ using System.Collections.Generic;
 
 class Administrador : Usuario{
   //Atributos
-  protected string cadastrarFunc;
+  //protected string cadastrarProd;
+  protected int qtdProduto = 100;
   protected List<string> listaProdutos = new List<string>();
 
   //Metodos
-  protected void adicionarProduto(){
+  public void cadastrarFunc(){
+
+  }
+
+  public void adicionarProduto(){
+    for(int 1 != 0; i<=qtdProduto; i++){
+    }
 
   }
   public void excluirProduto(){

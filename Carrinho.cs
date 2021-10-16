@@ -6,11 +6,11 @@ class Carrinho{
   protected List<double> listaCarrinho = new List<double>();
   private double totalCompra;
 
-  public double getTotalCompra(){
+  public  double getTotalCompra(){
     return totalCompra;
   }
 
-   public void setTotalCompra(double total){
+   public  void setTotalCompra(double total){
     totalCompra = total;
   }
 

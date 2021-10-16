@@ -15,7 +15,7 @@ class Cliente : Usuario{
       }
     }
     
-  protected void adicionarProdutoCarrinho(){
+  public void adicionarProdutoCarrinho(){
     
   }
 

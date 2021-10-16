@@ -22,3 +22,11 @@
 /home/runner/Avaliacao2/obj/Debug/netcoreapp5.0/main.dll
 /home/runner/Avaliacao2/obj/Debug/netcoreapp5.0/ref/main.dll
 /home/runner/Avaliacao2/obj/Debug/netcoreapp5.0/main.pdb
+/home/runner/Avaliacao2/bin/Debug/netcoreapp5.0/main
+/home/runner/Avaliacao2/bin/Debug/netcoreapp5.0/main.deps.json
+/home/runner/Avaliacao2/bin/Debug/netcoreapp5.0/main.runtimeconfig.json
+/home/runner/Avaliacao2/bin/Debug/netcoreapp5.0/main.runtimeconfig.dev.json
+/home/runner/Avaliacao2/bin/Debug/netcoreapp5.0/main.dll
+/home/runner/Avaliacao2/bin/Debug/netcoreapp5.0/ref/main.dll
+/home/runner/Avaliacao2/bin/Debug/netcoreapp5.0/main.pdb
+/home/runner/Avaliacao2/obj/Debug/netcoreapp5.0/main.genruntimeconfig.cache
