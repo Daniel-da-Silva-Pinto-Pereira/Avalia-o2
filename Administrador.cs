@@ -13,7 +13,8 @@ class Administrador : Usuario{
   }
 
   public void adicionarProduto(){
-    for(int 1 != 0; i<=qtdProduto; i++){
+    for(int i = 1; i<=qtdProduto; i++){
+      Console.WriteLine("teste");
     }
 
   }

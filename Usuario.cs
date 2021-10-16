@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-abstract class Usuario : IAutenticar{
+public abstract class Usuario : IAutenticar{
 
   //Atributos:
 

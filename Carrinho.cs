@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
 
-class Carrinho{
+public class Carrinho{
   //Atributos
   protected List<double> listaCarrinho = new List<double>();
-  private double totalCompra;
+  protected double totalCompra;
 
   public  double getTotalCompra(){
     return totalCompra;
@@ -26,6 +26,11 @@ class Carrinho{
   }
   public void fecharCompra(){
 
+  }
+
+  public Carrinho(List<double> l, double t){
+    listaCarrinho = l;
+    totalCompra = t;
   }
   
 }

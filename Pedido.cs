@@ -1,12 +1,16 @@
 using System;
 using System.Collections.Generic;
 
-class Pedido{
-//Atributos
-protected double numeroPedido;
+public class Pedido : Carrinho{
+  //Atributos
+  protected int numeroPedido;
+  //protected double totalCompra;
 
-//Metodos
-public void listarCompra(){
-  
-}
+  //Metodos
+
+  public Pedido(List<double> l, double t):base(l,t){}
+
+  public void listarCompra(){
+    
+  }
 }
