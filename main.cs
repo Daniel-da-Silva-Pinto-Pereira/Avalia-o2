@@ -49,7 +49,24 @@ class Program {
     Console.WriteLine("Com a opção "+opcao+ "a venda total ficou no valor de "+minhaVenda.metodoPag(opcao));
     //Finalização da compra
     Console.WriteLine(minhaVenda.finalizarCompra());
-    
+
+    Console.WriteLine("------------------------------------------");
+    //Instanciando atendente
+    Atendente_virtual Daniel = new Atendente_virtual("1234", "atDaniel", "152345", "16695532211", "1526", "Daniel da Silva", "2799658563", true, "Atendente");
+
+    //Instanciando cliente
+    Cliente Carol = new Cliente("1475", "CarolOliveira", "202111365", "18896523141", "258", "Carol Oliveira", "27999975685", true, "Cliente");
+
+    //Privilégio
+    Console.WriteLine(Daniel.getNome()+" tem as permissões: "+Daniel.Privilegios());
+    Console.WriteLine("------------------------------------------");
+
+    Console.WriteLine(admCarlos.getNome()+" tem as permissões: "+admCarlos.Privilegios());
+    Console.WriteLine("------------------------------------------");
+
+    Console.WriteLine(Carol.getNome()+" tem as permissões: "+Carol.Privilegios());
+
+
 
   }
 } 

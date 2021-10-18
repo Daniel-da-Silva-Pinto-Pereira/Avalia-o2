@@ -72,4 +72,8 @@ public abstract class Usuario : IAutenticar{
     status = st;
     tipo = tp;
   }
+
+  public string getNome(){
+    return nome;
+  }
 }

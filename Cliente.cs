@@ -26,7 +26,7 @@ class Cliente : Usuario{
 
   //Privilégios
   public override string Privilegios(){
-    string privC = "Consulta de produtos disponível para compra; comprar produtos";
+    string privC = "Consulta de produtos disponíveis para compra; comprar produtos";
     return privC;
   }
 

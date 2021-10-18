@@ -37,4 +37,5 @@ class Administrador : Usuario{
     return privA;
   }
 
+
 }
