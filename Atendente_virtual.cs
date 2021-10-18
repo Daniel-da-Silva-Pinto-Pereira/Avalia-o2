@@ -5,16 +5,10 @@ class Atendente_virtual : Usuario{
   //Atributos
   protected string cargo;
 
-  //Metodos
+  //Métodos:
 
-  public Atendente_virtual(string s, string l, string m, int c_p_f, int i, string n, int tel, bool st, string tp):base(s,l,m,c_p_f,i,n,tel,st,tp){
+  public Atendente_virtual(string s, string l, string m, string c_p_f, string i, string n, string tel, bool st, string tp):base(s,l,m,c_p_f,i,n,tel,st,tp){
       
-  }
-
-  // Login funcionário
-  public override bool validarUsuario(string m, string s){
-    if (matricula == "func" && Senha == "func123");
-      return true;
   }
 
   //Privilégios

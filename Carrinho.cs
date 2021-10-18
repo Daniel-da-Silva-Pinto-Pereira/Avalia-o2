@@ -7,17 +7,16 @@ public class Carrinho{
   protected double totalCompra;
   protected bool fechar;
 
-   public  void setTotalCompra(double total){
+  //Métodos:
+
+  public  void setTotalCompra(double total){
     totalCompra = total;
   }
-
-  //Metodos
   public void excluirProdCarrinho(string nome){
     listaCarrinho.Remove(nome);
   }
   public void addProdCar(string prod){
     listaCarrinho.Add(prod);
-    //listaProdutos = prod;
   }
   public double visualizarTotalCompra(){
     return totalCompra;

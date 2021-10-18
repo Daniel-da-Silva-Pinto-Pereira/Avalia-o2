@@ -9,12 +9,4 @@ class Produto{
   protected double valor;
   protected double quantidade;
 
-  //Metodos
-  public void listarProduto(){
-    //Administrador.consultarEstoque();
-  }
-  public void cadastrarProduto(){
-    
-  }
-
 }

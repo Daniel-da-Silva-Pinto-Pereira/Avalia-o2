@@ -34,10 +34,10 @@ public abstract class Usuario : IAutenticar{
   }
 
   protected string matricula;
-  protected int cpf;
-  protected int id;
+  protected string cpf;
+  protected string id;
   protected string nome;
-  protected int telefone;
+  protected string telefone;
   protected bool status;
   protected string tipo;
 
@@ -45,13 +45,10 @@ public abstract class Usuario : IAutenticar{
 
   //Sobrecarga e Sobrescrita:
   //Login de um cliente normal
-  public virtual bool validarUsuario(int c, string s){
+  public virtual bool validarUsuario(string c, string s){
     return false;
   }
-  // Login funcionário
-  public virtual bool validarUsuario(string m, string s){
-    return false;
-  }
+  
   // Login admin
   public virtual bool validarUsuario(string m, string s, int mand){
     return false;
@@ -64,7 +61,7 @@ public abstract class Usuario : IAutenticar{
   }
 
   //Construtor:
-  public Usuario(string s, string l, string m, int c_p_f, int i, string n, int tel, bool st, string tp){
+  public Usuario(string s, string l, string m, string c_p_f, string i, string n, string tel, bool st, string tp){
     senha = s;
     login = l;
     matricula = m;
@@ -75,7 +72,4 @@ public abstract class Usuario : IAutenticar{
     status = st;
     tipo = tp;
   }
-
-
-
 }
